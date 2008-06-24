@@ -2,7 +2,7 @@ package Acme::PerlVMGolf;
 use strict;
 use warnings;
 use 5.00800;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 use XSLoader;
 XSLoader::load 'Acme::PerlVMGolf', $VERSION;
 

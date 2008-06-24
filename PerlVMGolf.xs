@@ -11,7 +11,7 @@ static op_score;
 static OP *(*PL_ppaddr_bak[OP_max + 1])(pTHX);
 
 OP * count_score(pTHX) {
-    PerlIO_printf(PerlIO_stderr(), "hit: %dop\n", PL_op->op_type);
+    PerlIO_printf(PerlIO_stderr(), "hit: %dop(%s, %s)\n", PL_op->op_type, OP_NAME(PL_op), OP_DESC(PL_op));
     op_score += PL_op->op_type;
 
     if (PL_op->op_type == OP_LEAVE) {

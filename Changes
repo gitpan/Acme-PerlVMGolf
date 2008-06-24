@@ -1,4 +1,9 @@
 Revision history for Perl extension Acme::PerlVMGolf
 
+0.02
+
+    - display op name, op desc.
+      (thanks to yappo++)
+
 0.01    Mon Jun 23 19:30:51 2008
         - original version
